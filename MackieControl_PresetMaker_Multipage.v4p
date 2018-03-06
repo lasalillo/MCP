@@ -87,7 +87,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4080" top="1890" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.95">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -205,7 +205,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="5,5,5,5,5,5,5,5,7">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="9">
    </PIN>
@@ -243,7 +243,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="9" values="0,0,0,0,0,0,0,0,4">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="9">
    </PIN>
@@ -976,20 +976,6 @@
    </NODE>
    <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="44" dstpinname="XTouch/PlatformM+">
    </LINK>
-   <NODE id="46" systemname="MIDIOut (MIDI.Controllers)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIOut (MIDI.Controllers)" componentmode="Hidden">
-   <BOUNDS type="Node" left="240" top="5115" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="XTouch/PlatFormM+" visible="1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="46" dstpinname="XTouch/PlatFormM+" linkstyle="Bezier">
-   <LINKPOINT x="300" y="4360">
-   </LINKPOINT>
-   <LINKPOINT x="1065" y="4175">
-   </LINKPOINT>
-   </LINK>
    <NODE id="1" systemname="PresetMaker (MIDI.PresetMaker MultiPage)" filename="vl\VVVV.MIDI.PresetMaker.vl" hiddenwhenlocked="0" managers="" componentmode="Hidden" nodename="PresetMaker (MIDI.PresetMaker MultiPage)">
    <BOUNDS type="Node" left="2295" top="4425" width="3300" height="270">
    </BOUNDS>
@@ -1029,7 +1015,7 @@
    </PIN>
    <PIN pinname="Write" pintype="Input" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Read" pintype="Input" visible="1" slicecount="1" values="||">
+   <PIN pinname="Read" pintype="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Typo" pintype="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1087,9 +1073,9 @@
    </PIN>
    <PIN pinname="Realtime" visible="1">
    </PIN>
-   <PIN pinname="Directory" visible="1">
+   <PIN pinname="Directory" visible="1" slicecount="1" values="Files\Multi">
    </PIN>
-   <PIN pinname="Refresh" visible="1">
+   <PIN pinname="Refresh" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="RealtimeRaw" visible="1">
    </PIN>
@@ -1126,12 +1112,6 @@
    <LINKPOINT x="2150" y="4098">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Out" dstnodeid="46" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2295" y="4890">
-   </LINKPOINT>
-   <LINKPOINT x="300" y="4890">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="156">
    <BOUNDS type="Box" left="13605" top="3390" width="795" height="2190">
    </BOUNDS>
@@ -1143,7 +1123,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="9">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -1167,7 +1147,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="9" values="0,0,0,0,0,0,0,0,4">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="9">
    </PIN>
@@ -1453,9 +1433,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="173">
-   <BOUNDS type="Box" left="8580" top="4035" width="795" height="240">
+   <BOUNDS type="Box" left="6420" top="3840" width="2055" height="975">
    </BOUNDS>
-   <BOUNDS type="Node" left="8580" top="4035" width="0" height="0">
+   <BOUNDS type="Node" left="6420" top="3840" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1463,7 +1443,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="BPM">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="60">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="25">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="174">
@@ -1499,6 +1481,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="SetNewBPM">
    </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="175" srcpinname="Y Output Value" dstnodeid="1" dstpinname="SetNewBPM">
    </LINK>
@@ -1515,7 +1499,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Beat">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="3">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177">
@@ -1531,7 +1515,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Divisions">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="178">
@@ -1605,9 +1589,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="180" srcpinname="BPM" dstnodeid="173" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="9530" y="2813">
+   <LINKPOINT x="8810" y="2748">
    </LINKPOINT>
-   <LINKPOINT x="9070" y="3203">
+   <LINKPOINT x="7630" y="3073">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="180" srcpinname="Beat" dstnodeid="176" dstpinname="Y Input Value" linkstyle="VHV">
@@ -1762,6 +1746,26 @@
    <LINKPOINT x="7110" y="6165">
    </LINKPOINT>
    <LINKPOINT x="9570" y="930">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="46" systemname="MIDIOut (MIDI.Controllers)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIOut (MIDI.Controllers)" componentmode="Hidden">
+   <BOUNDS type="Node" left="240" top="5115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XTouch/PlatFormM+" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Out" dstnodeid="46" dstpinname="Input" linkstyle="Bezier">
+   <LINKPOINT x="2295" y="4890">
+   </LINKPOINT>
+   <LINKPOINT x="300" y="4890">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Y Output Value" dstnodeid="46" dstpinname="XTouch/PlatFormM+" linkstyle="Bezier">
+   <LINKPOINT x="300" y="4360">
+   </LINKPOINT>
+   <LINKPOINT x="1065" y="4175">
    </LINKPOINT>
    </LINK>
    </PATCH>
