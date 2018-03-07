@@ -1,0 +1,81 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
+   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\Info.v4p" systemname="Info" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\Info.v4p">
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="435" top="285" width="1020" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="435" top="285" width="2070" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|LAUNCH PAD&cr;&lf;-UpRight = Enable Edit&cr;&lf;-Side Buttons&cr;&lf;Add&cr;&lf;Copy&cr;&lf;Delete&cr;&lf;Edit&cr;&lf;SwapPrev&cr;&lf;SwapNext&cr;&lf;Undo&cr;&lf;Redo|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="450" top="4185" width="2580" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="450" top="4185" width="3105" height="735">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Behringer, &lt;A B&gt; Layer = Minus Plus BPM&cr;&lf;Channel = IncDec BPM&cr;&lf;Sends Button (Right Up)= Enable Edit|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="450" top="4965" width="2580" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="450" top="4965" width="3105" height="720">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Platform M+, JogWheel = Minus Plus BPM&cr;&lf;Channel &amp; ZoomX = IncDec BPM&cr;&lf;Read = Enable Edit&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="450" top="2730" width="1410" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="450" top="2730" width="2070" height="1395">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Play = Update BPM&cr;&lf;Stop = Tap&cr;&lf;Loop = EditValues&cr;&lf;Rec = Add Cue&cr;&lf;Bank = Select Layer&cr;&lf;&lt;&lt; &gt;&gt; = Prev Next Cue|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Node" left="450" top="5730" width="1050" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="450" top="5730" width="3105" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Master Layer&cr;&lf;Encoders = Select Preset ID (Layer 1-8)&cr;&lf;Encoders  Push = Enter ID|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="36240" top="0" width="4215" height="7470">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.4">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   </PATCH>

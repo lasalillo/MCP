@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MackieControl\MackieControl_PresetMaker_Multipage.v4p" systemname="BehringerXtouch_PresetMaker_Multipage" filename="D:\_VVVV\_Projects\_BEHRINGER_XTOUCH_MACKIE\BehringerXtouch_PresetMaker_Multipage.v4p" scrollx="0" scrolly="0" bgcolor="12897709" locked="0">
+   <PATCH nodename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MackieControl_PresetMaker_Multipage.v4p" systemname="BehringerXtouch_PresetMaker_Multipage" filename="D:\_VVVV\_Projects\_BEHRINGER_XTOUCH_MACKIE\BehringerXtouch_PresetMaker_Multipage.v4p" scrollx="0" scrolly="0" bgcolor="12897709" locked="0">
    <BOUNDS type="Window" left="5475" top="210" width="23325" height="14655">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -87,7 +87,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4080" top="1890" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.95">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1079,6 +1079,8 @@
    </PIN>
    <PIN pinname="RealtimeRaw" visible="1">
    </PIN>
+   <PIN pinname="RAW" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Write" linkstyle="VHV">
    <LINKPOINT x="3100" y="3340">
@@ -1742,12 +1744,6 @@
    <LINKPOINT x="2470" y="3150">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Realtime" dstnodeid="180" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="7110" y="6165">
-   </LINKPOINT>
-   <LINKPOINT x="9570" y="930">
-   </LINKPOINT>
-   </LINK>
    <NODE id="46" systemname="MIDIOut (MIDI.Controllers)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIOut (MIDI.Controllers)" componentmode="Hidden">
    <BOUNDS type="Node" left="240" top="5115" width="100" height="100">
    </BOUNDS>
@@ -1767,5 +1763,111 @@
    </LINKPOINT>
    <LINKPOINT x="1065" y="4175">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Send_Raw (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw (Network.ZeroMQ Raw).v4p" nodename="Send_Raw (Network.ZeroMQ Raw)" componentmode="Hidden" id="185">
+   <BOUNDS type="Node" left="3015" top="6720" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Raw" visible="1">
+   </PIN>
+   <PIN pinname="Port" visible="1">
+   </PIN>
+   <PIN pinname="Send" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="186">
+   <BOUNDS type="Box" left="3360" top="5595" width="810" height="615">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3360" top="5595" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10005">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="185" dstpinname="Port">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="187">
+   <BOUNDS type="Box" left="3930" top="6210" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3930" top="6210" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="187" srcpinname="Y Output Value" dstnodeid="185" dstpinname="Send">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Realtime" dstnodeid="180" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Receive (MIDI IN)" filename="..\SendReceiveModules\Receive (MIDI IN).v4p" nodename="Receive (MIDI IN)" componentmode="Hidden" id="194">
+   <BOUNDS type="Node" left="16620" top="1350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="OnData" visible="1">
+   </PIN>
+   <PIN pinname="Port" slicecount="1" values="10005" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="195">
+   <BOUNDS type="Box" left="17445" top="1800" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17445" top="1800" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="194" srcpinname="OnData" dstnodeid="195" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="196">
+   <BOUNDS type="Node" left="3960" top="4860" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="RAW" dstnodeid="196" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Output Node" dstnodeid="185" dstpinname="Raw">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="204">
+   <BOUNDS type="Box" left="16995" top="675" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="16995" top="675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10005">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="204" srcpinname="Y Output Value" dstnodeid="194" dstpinname="Port">
    </LINK>
    </PATCH>
