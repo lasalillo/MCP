@@ -353,7 +353,7 @@
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
-                <Pin Id="DHXmkDSo0tOMcT6XexX3B7" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="DHXmkDSo0tOMcT6XexX3B7" Name="Out" Kind="StateOutputPin" />
               </Node>
               <ControlPoint Id="UbIDHOKNUVvPDIwBee8F7b" Bounds="674,430" />
             </Canvas>
@@ -949,7 +949,7 @@
                     <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
                   </CategoryReference>
                 </p:NodeReference>
-                <Pin Id="F8icE6HqLmLP7Qjlgm6d3g" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="F8icE6HqLmLP7Qjlgm6d3g" Name="Out" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="581,168,26,13" Id="BLXtW7tZTWCMkYKusiYKtm">
                 <p:NodeReference LastCategoryFullName="VVVV.MIDI.ControllerSystem" LastSymbolSource="VVVV.MIDI.Controllers.vl">
@@ -1026,6 +1026,68 @@
             <Link Id="C2MFPgmghEmLmVQNOD6p1W" Ids="L7WBoAGYrazP6hwkLl8MKH,EoaHxyVnLjDPN0CVk4W4tw" />
             <Link Id="UzQk52qXfWVO8ymQa7vcSf" Ids="KAU4VPetaMnL55C6mvhkKz,D8b2SQvc3P2OdeEhYD53Lg" />
             <Link Id="Apdt1Kxe4HPMmmcpe5NPMV" Ids="D8b2SQvc3P2OdeEhYD53Lg,KCPg5MULqICOtPNXLXTX3E" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Default ************************
+
+-->
+        <Node Name="Default" Bounds="1187,351,338,159" Id="PjZxut38s8eLZ9ZDMndtQ2">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin" LastDependency="VVVV.MIDI.Controllers.vl">
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="DCkAkHltl8fMuHj7Qag2nT">
+            <Node Bounds="1454,374,59,13" Id="L9uHUx4A6KPLKEhJySi48i">
+              <p:NodeReference LastCategoryFullName="VVVV.MIDI.MackieControl.In" LastSymbolSource="VVVV.MIDI.MackieControl.vl" LastDependency="VVVV.MIDI.Controllers.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Default" />
+                <CategoryReference Kind="ContainerTypeFlag" Name="In" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="MackieControl" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="Cog80WN30M4PvY0BrcQGBe" Name="Out" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1199,380,245,22" Id="K1xo8KcuR5lL4p3UaaEV53">
+              <p:NodeReference LastCategoryFullName="VVVV.MIDI.LaunchPad.LaunchPad" LastSymbolSource="VVVV.MIDI.LaunchPad.vl" LastDependency="VVVV.MIDI.Controllers.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Join" />
+                <CategoryReference Kind="RecordType" Name="LaunchPad" NeedsToBeDirectParent="true">
+                  <p:OuterCategoryReference Kind="Category" Name="LaunchPad" NeedsToBeDirectParent="true" />
+                </CategoryReference>
+              </p:NodeReference>
+              <Pin Id="TeNH8yTlJs4QSq3Qv9cFCx" Name="Input" Kind="StateInputPin" />
+              <Pin Id="TE3lronZU1yOFE8p51A4WC" Name="PressedPads" Kind="InputPin" />
+              <Pin Id="HZj5ytG29ueOfQjYZpOWFr" Name="PressedSide" Kind="InputPin" />
+              <Pin Id="TMveTl8SYGfM81Pi75amyR" Name="PressedUp" Kind="InputPin" />
+              <Pin Id="MvWYB7WyugaMztYjocYCdd" Name="LastPad" Kind="InputPin" />
+              <Pin Id="KUXx2l31X0rMMoQtVQ4ChQ" Name="LastSide" Kind="InputPin" />
+              <Pin Id="DzTAjKkDsk7Py4GTMyZaRo" Name="LastUp" Kind="InputPin" />
+              <Pin Id="UhhqTwvsdSvOcgFcvk8v8K" Name="PadsOn" Kind="InputPin" />
+              <Pin Id="AfgvRvMvEpjP6qB5OdpgLl" Name="PadColors" Kind="InputPin" />
+              <Pin Id="OOH0XbcfwFqLPWiuoe1dGF" Name="SideOn" Kind="InputPin" />
+              <Pin Id="VmH9pZhYZIAPo66RFK7Ww2" Name="SideColors" Kind="InputPin" />
+              <Pin Id="Qp7CxvGYySgNOoSsPuwIgK" Name="UpOn" Kind="InputPin" />
+              <Pin Id="GVTxTrTpSydNNZJS1rrcwJ" Name="UpColors" Kind="InputPin" />
+              <Pin Id="EFfi4wQpKJ1QRWCQku8UxP" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="1217,429,45,13" Id="PSMM1LtA1gDMQJKxEjR51o">
+              <p:NodeReference LastCategoryFullName="VVVV.MIDI.ControllerSystem.MidiControllers" LastSymbolSource="VVVV.MIDI.Controllers.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Join" />
+                <CategoryReference Kind="RecordType" Name="MidiControllers" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="DCqmSc7zmS2LM1BSwqha01" Name="Input" Kind="StateInputPin" />
+              <Pin Id="MSTsGep9TCcNbhektEmS8A" Name="LaunchPad" Kind="InputPin" />
+              <Pin Id="P6wqFVSgNiRN4Lun2XudbM" Name="MackieControl" Kind="InputPin" />
+              <Pin Id="AOdsnRavJ3DOffTyDkGW24" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Link Id="BNPUbQcMs7sMkatp5s5pFz" Ids="EFfi4wQpKJ1QRWCQku8UxP,MSTsGep9TCcNbhektEmS8A" />
+            <Link Id="F1s3xzTx9aHP3IB6wlkvrf" Ids="Cog80WN30M4PvY0BrcQGBe,P6wqFVSgNiRN4Lun2XudbM" />
+            <ControlPoint Id="SH3gpDDnYMqOimp1I2DrHM" Bounds="1220,491" />
+            <Link Id="UC31OWIgxLXLlpcmkptNA3" Ids="AOdsnRavJ3DOffTyDkGW24,SH3gpDDnYMqOimp1I2DrHM" />
+            <Pin Id="R8FKwbu698jO5Rw2BaDfMX" Name="Out" Kind="OutputPin" Bounds="1220,491" />
+            <Link Id="Jg425u2FQiMLVky9cDVmdu" Ids="SH3gpDDnYMqOimp1I2DrHM,R8FKwbu698jO5Rw2BaDfMX" IsHidden="true" />
           </Patch>
         </Node>
       </Canvas>

@@ -106,18 +106,4 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="7">
-   <BOUNDS type="Node" left="330" top="1830" width="4995" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="330" top="1830" width="1890" height="735">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Note, if the bank gets empty during editing, it loads the default presets|">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
    </PATCH>

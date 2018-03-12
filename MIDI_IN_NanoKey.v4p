@@ -1,31 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN_Icon.v4p" systemname="MIDI_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN.v4p" scrollx="0" scrolly="0" bgcolor="16777215">
-   <BOUNDS type="Window" left="28800" top="5970" width="3495" height="4050">
+   <PATCH nodename="C:\Users\seblh\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN_NanoKey.v4p" systemname="MIDI_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="28170" top="5385" width="6510" height="6285">
    </BOUNDS>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1470" top="660" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1470" top="660" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="XTouch/PlatFormM+">
-   </PIN>
-   </NODE>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="555" top="2640" width="100" height="100">
+   <BOUNDS type="Node" left="555" top="3090" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="16350" top="1920" width="10275" height="11385">
    </BOUNDS>
@@ -39,17 +17,17 @@
    </PIN>
    <PIN pinname="Success" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="555" top="2640">
+   <BOUNDS type="Box" left="555" top="3090">
    </BOUNDS>
    </NODE>
    <NODE id="4" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="1935" top="2295" width="285" height="240">
+   <BOUNDS type="Box" left="1935" top="2745" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1935" top="2295" width="0" height="0">
+   <BOUNDS type="Node" left="1935" top="2745" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" pintype="Configuration" values="Boolean">
    </PIN>
@@ -125,11 +103,11 @@
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Send">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="555" top="2160" width="795" height="240">
+   <BOUNDS type="Box" left="555" top="2610" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="555" top="2160" width="0" height="0">
+   <BOUNDS type="Node" left="555" top="2610" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="MidiIn">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="NanoKey">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -147,9 +125,9 @@
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
-   <BOUNDS type="Box" left="1005" top="1725" width="285" height="240">
+   <BOUNDS type="Box" left="1005" top="1200" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1005" top="1725" width="0" height="0">
+   <BOUNDS type="Node" left="1005" top="1200" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -164,34 +142,12 @@
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enable">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
-   <BOUNDS type="Box" left="2565" top="2415" width="285" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2565" top="2415" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   </NODE>
-   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
-   <BOUNDS type="Node" left="450" top="960" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Maximum Foreground FPS" visible="1" slicecount="1" values="120">
-   </PIN>
-   <PIN pinname="Maximum Background FPS" visible="1" slicecount="1" values="120">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="450" top="555" width="795" height="240">
+   <BOUNDS type="Box" left="210" top="285" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="450" top="555" width="0" height="0">
+   <BOUNDS type="Node" left="210" top="285" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="65">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -202,22 +158,18 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
-   </LINK>
    <NODE systemname="VVVV (VVVV)" nodename="VVVV (VVVV)" componentmode="Hidden" id="-11">
-   <BOUNDS type="Node" left="450" top="1245" width="100" height="100">
+   <BOUNDS type="Node" left="210" top="975" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Application Title" slicecount="1" values="MIDI_IN">
+   <PIN pinname="Application Title" slicecount="1" values="NETWORK">
    </PIN>
    <PIN pinname="Show in Tray" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
-   <BOUNDS type="Box" left="555" top="3030" width="285" height="240">
+   <BOUNDS type="Box" left="555" top="3480" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="555" top="3030" width="0" height="0">
+   <BOUNDS type="Node" left="555" top="3480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -230,30 +182,62 @@
    </NODE>
    <LINK srcnodeid="5" srcpinname="Success" dstnodeid="10" dstpinname="Y Input Value">
    </LINK>
-   <NODE id="0" systemname="MIDIIn (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="MIDIIn (MIDI.ControllerSystem)" componentmode="Hidden">
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Node" left="1470" top="1590" width="100" height="100">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="3615" top="1860" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="XTouch/PlatformM+" visible="1" slicecount="1" values="1">
+   <BOUNDS type="Node" left="3615" top="1860" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Is Open|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="XTouch/PlatformM+">
-   </LINK>
-   <NODE systemname="AsRaw (MIDI.ControllerSystem)" filename="vl\VVVV.MIDI.Controllers.vl" nodename="AsRaw (MIDI.ControllerSystem)" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="1470" top="1965" width="100" height="100">
+   <NODE systemname="LightControl" filename="..\DMX\LightControl.v4p" nodename="..\DMX\LightControl.v4p" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="2745" top="4245" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <BOUNDS type="Window" left="6735" top="8430" width="20370" height="9690">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="NanoKontrol_Visualizer" filename="NanoKontrol_Visualizer.v4p" nodename="NanoKontrol_Visualizer.v4p" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="2550" top="3150" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1000" top="1600" width="3100" height="3100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="21120" top="8055" width="12750" height="11070">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="2985" top="165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="31560" top="705" width="6000" height="4500">
+   </BOUNDS>
+   </NODE>
+   <NODE id="-6" systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden">
+   <BOUNDS type="Node" left="210" top="690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" visible="1" slicecount="1" values="120">
    </PIN>
-   <PIN pinname="Raw" visible="1">
-   </PIN>
-   <PIN pinname="On Data" visible="1">
+   <PIN pinname="Maximum Background FPS" visible="1" slicecount="1" values="120">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Raw" dstnodeid="5" dstpinname="Raw">
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="On Data" dstnodeid="8" dstpinname="Y Input Value">
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   <NODE systemname="MidiIn (MIDI.NanoKorg)" filename="vl\VVVV.MIDI.KorgNano.vl" nodename="MidiIn (MIDI.NanoKorg)" componentmode="Hidden" id="28" debug="0">
+   <BOUNDS type="Node" left="1470" top="1380" width="2205" height="270">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Raw" dstnodeid="5" dstpinname="Raw">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Is Open" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="26" dstpinname="Input">
    </LINK>
    </PATCH>
