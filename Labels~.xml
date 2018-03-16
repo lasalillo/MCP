@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\Labels.v4p" systemname="Labels" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\Labels.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="29490" top="4275" width="26220" height="11070">
+   <PATCH nodename="C:\Users\worse\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\Labels.v4p" systemname="Labels" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\Labels.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="29595" top="3195" width="26220" height="11070">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -115,7 +115,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="48" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,">
+   <PIN pinname="Input String" slicecount="48" values="|color MAX|,|blur MAX|,|same block|,spiral,,,,,|color FPS|,blur,,,,,,,|no Color|,,,,,,,,|direc- tion|,,,,,,,,|true = block|,,,,,,,,speed,|Cam X|,|Cam Y|,|blur intensity|,|lightness block|,,,">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="1">
    </PIN>
@@ -193,7 +193,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="48" visible="1" values="|Splines RED|,|Voro NextCa|,,,,,,,,,,,,,,,|Voro Wire|,|Voro Black|,,,,,,,|Vo BW/ Color|,,,,,,,,,,,,,,,,|Splines Deform|,|Splines Cam Y|,|Splines Cam X|,,,,,">
+   <PIN pinname="Input String" slicecount="48" visible="1" values="|Splines RED|,|Voro NextCa|,,,,,,,,,,,,,,,|Voro Wire|,|Voro Black|,,,,,,,|Vo BW/ Color|,|Voro Spiral|,,,,,,,|Voro NoSolid|,,,,,,,,|Splines Deform|,|Splines Cam Y|,|Splines Cam X|,,,,,">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="2">
    </PIN>
@@ -289,7 +289,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="48" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,">
+   <PIN pinname="Input String" slicecount="48" values=",,,,,,,,Blur,Distort,,,,,,,Wire,,,,,,,,|RND Color|,,,,,,,,,,,,,,,,Color,|Select OBJ|,Size,|Rot Speed|,,,,">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="5">
    </PIN>
@@ -337,7 +337,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="48" visible="1" values="|Ripple RED|,|Impulse Color|,,,,|Wire |,|New Campos|,|New Pos|,|Ripple Low/Hi|,|Audio Mode|,|Rotate Mode|,Cycle,,,Amount,Size,|Ripple Center|,,,,,,,|Egdy/ Round|,,,,,,,|No Cull|,|Meta Level|,,,,,,,|Sound 2 Mass|,Orbit,,|Impulse Scale|,|Impulse Rotate|,,|Dis tance|,|Distri bution|,|Text Rotate|,|Dim ension|">
+   <PIN pinname="Input String" slicecount="48" visible="1" values="|Ripple RED|,|Impulse Color|,,,,|Wire |,|New Campos|,|New Pos|,|Audio Mode|,|Rotate Mode|,Cycle,,,,Amount,Size,|Ripple Low/Hi|,,,,,,,|Egdy/ Round|,|Ripple Center|,,,,,,|No Cull|,|Meta Level|,,,,,,,|Sound 2 Mass|,Orbit,,|Impulse Scale|,|Impulse Rotate|,,|Dis tance|,|Distri bution|,|Text Rotate|,|Dim ension|">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="7">
    </PIN>

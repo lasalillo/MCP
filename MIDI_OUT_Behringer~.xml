@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="C:\Users\worse\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT_Behringer.v4p" scrollx="0" scrolly="0" systemname="MIDI_OUT" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT.v4p">
+   <PATCH nodename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT_Behringer.v4p" scrollx="0" scrolly="0" systemname="MIDI_OUT" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_OUT.v4p">
    <BOUNDS type="Window" left="39405" top="4215" width="3495" height="4050">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
@@ -107,7 +107,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="225" top="195" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="65">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowController.v4p" systemname="ShowLables" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowLables.v4p" bgcolor="7361853" scrollx="0" scrolly="0" locked="1">
+   <PATCH nodename="C:\SBB\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowController.v4p" systemname="ShowLables" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowLables.v4p" bgcolor="7361853" scrollx="0" scrolly="0" locked="1">
    <BOUNDS type="Window" left="35715" top="0" width="10365" height="11850">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">

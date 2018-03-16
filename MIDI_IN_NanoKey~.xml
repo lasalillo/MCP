@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="C:\Users\seblh\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN_NanoKey.v4p" systemname="MIDI_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="28170" top="5385" width="6510" height="6285">
+   <PATCH nodename="C:\SBB\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN_NanoKey.v4p" systemname="MIDI_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MIDI_IN.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="22290" top="0" width="6510" height="4785">
    </BOUNDS>
    <NODE systemname="Send_Raw_Topic (Network.ZeroMQ Raw)" filename="..\SendReceiveModules\Send_Raw_Topic (Network.ZeroMQ Raw).v4p" nodename="Send_Raw_Topic (Network.ZeroMQ Raw)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="555" top="3090" width="100" height="100">
@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="210" top="285" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -159,9 +159,9 @@
    </PIN>
    </NODE>
    <NODE systemname="VVVV (VVVV)" nodename="VVVV (VVVV)" componentmode="Hidden" id="-11">
-   <BOUNDS type="Node" left="210" top="975" width="100" height="100">
+   <BOUNDS type="Node" left="210" top="1005" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Application Title" slicecount="1" values="NETWORK">
+   <PIN pinname="Application Title" slicecount="1" values="LIGHT">
    </PIN>
    <PIN pinname="Show in Tray" slicecount="1" values="1">
    </PIN>
@@ -199,21 +199,21 @@
    </PIN>
    </NODE>
    <NODE systemname="LightControl" filename="..\DMX\LightControl.v4p" nodename="..\DMX\LightControl.v4p" componentmode="InAWindow" id="17">
-   <BOUNDS type="Node" left="2745" top="4245" width="100" height="100">
+   <BOUNDS type="Node" left="2565" top="3315" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="6735" top="8430" width="20370" height="9690">
+   <BOUNDS type="Window" left="14250" top="0" width="11715" height="10530">
    </BOUNDS>
    </NODE>
    <NODE systemname="NanoKontrol_Visualizer" filename="NanoKontrol_Visualizer.v4p" nodename="NanoKontrol_Visualizer.v4p" componentmode="Hidden" id="26">
-   <BOUNDS type="Node" left="2550" top="3150" width="0" height="0">
+   <BOUNDS type="Node" left="2550" top="2730" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1000" top="1600" width="3100" height="3100">
+   <BOUNDS type="Box" left="1000" top="1180" width="3100" height="3100">
    </BOUNDS>
-   <BOUNDS type="Window" left="21120" top="8055" width="12750" height="11070">
+   <BOUNDS type="Window" left="11850" top="1455" width="12750" height="13485">
    </BOUNDS>
    </NODE>
    <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="2985" top="165" width="100" height="100">
+   <BOUNDS type="Node" left="1920" top="165" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="31560" top="705" width="6000" height="4500">
    </BOUNDS>
@@ -233,6 +233,8 @@
    <NODE systemname="MidiIn (MIDI.NanoKorg)" filename="vl\VVVV.MIDI.KorgNano.vl" nodename="MidiIn (MIDI.NanoKorg)" componentmode="Hidden" id="28" debug="0">
    <BOUNDS type="Node" left="1470" top="1380" width="2205" height="270">
    </BOUNDS>
+   <PIN pinname="Device" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Raw" dstnodeid="5" dstpinname="Raw">
    </LINK>

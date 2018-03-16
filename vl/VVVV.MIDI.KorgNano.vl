@@ -239,7 +239,7 @@
                 <Pin Id="HWRLbJLsoiAMqiFaXS6T24" Name="Result" Kind="OutputPin" />
                 <Pin Id="PT3FwtUfrGHODkrPiBluph" Name="On Data" Kind="OutputPin" />
               </Node>
-              <Pad Id="PbtVruXvh7DMJjNtzjZ9Vi" Comment="Device" Bounds="2078,397,161,19" ShowValueBox="true" isIOBox="true" Value="{&quot;FValue&quot;:&quot;nanoKONTROL2&quot;}">
+              <Pad Id="PbtVruXvh7DMJjNtzjZ9Vi" Comment="Device" Bounds="2318,397,161,19" ShowValueBox="true" isIOBox="true" Value="{&quot;FValue&quot;:&quot;nanoKONTROL2&quot;}">
                 <p:TypeAnnotation LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
                   <Choice Kind="TypeFlag" Name="MidiOutputDevice" />
                 </p:TypeAnnotation>
@@ -431,7 +431,7 @@
                 <Pin Id="JdrtGaa8a3SLmYLVajGJUb" Name="Input 2" Kind="InputPin" />
                 <Pin Id="QN37YFuX3OFMIab8lblg8G" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="NFsfiA8k4kUNXhnDOhKhKZ" Comment="reset" Bounds="2079,338,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <Pad Id="NFsfiA8k4kUNXhnDOhKhKZ" Comment="reset" Bounds="2319,338,40,19" ShowValueBox="true" isIOBox="true" Value="false">
                 <p:ValueBoxSettings>
                   <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
                 </p:ValueBoxSettings>
@@ -439,7 +439,7 @@
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="2077,197,66,13" Id="NSUIoUqEg03LNc6eh4xE5U">
+              <Node Bounds="2317,197,66,13" Id="NSUIoUqEg03LNc6eh4xE5U">
                 <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.KorgNano.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="TogEdge" />
@@ -555,13 +555,13 @@
     ************************ Bar2Int ************************
 
 -->
-              <Node Name="Bar2Int" Bounds="2261,552,257,172" Id="C5acFhXIEgsMTk9suxoEf4">
+              <Node Name="Bar2Int" Bounds="2321,550,260,172" Id="C5acFhXIEgsMTk9suxoEf4">
                 <p:NodeReference>
                   <Choice Kind="OperationDefinition" Name="Operation" />
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Patch Id="EERyC1UfsrLOZgqHOdcT0Q" IsGeneric="true">
-                  <Node Bounds="2317,586,189,104" Id="Eh6nyYlyVNOPwIKMTagxlO">
+                  <Node Bounds="2377,584,190,104" Id="Eh6nyYlyVNOPwIKMTagxlO">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.KorgNano.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -572,7 +572,7 @@
                       <Patch Id="FbLC2Oa26G6O7NwpjoQXG2" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="M3ImKF9qtdxOz5LzAdqpnX" Name="Update" ManuallySortedPins="true" />
                       <Patch Id="IzXeGwazOCONWhpSVw2tuL" Name="Destroy" ManuallySortedPins="true" />
-                      <Node Bounds="2398,630,25,13" Id="P36nntSREtcOmg8S819Wfu">
+                      <Node Bounds="2458,628,25,13" Id="P36nntSREtcOmg8S819Wfu">
                         <p:NodeReference LastCategoryFullName="Adaptive" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.KorgNano.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="=" />
@@ -582,13 +582,13 @@
                         <Pin Id="MnGAtE6SUE1QFsDlpk7JUE" Name="Input 2" Kind="InputPin" />
                         <Pin Id="GaA6CZZFJq3My2LUJUzi2S" Name="Result" Kind="OutputPin" />
                       </Node>
-                      <Pad Id="ODWFKBrry7BOBWkvJp74ml" Comment="" Bounds="2420,616,40,19" ShowValueBox="true" isIOBox="true" Value="true">
+                      <Pad Id="ODWFKBrry7BOBWkvJp74ml" Comment="" Bounds="2480,614,40,19" ShowValueBox="true" isIOBox="true" Value="true">
                         <p:ValueBoxSettings />
                         <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.vl">
                           <Choice Kind="TypeFlag" Name="Boolean" />
                         </p:TypeAnnotation>
                       </Pad>
-                      <Node Bounds="2330,656,73,13" Id="CnD7IDOy1IVOjN2LyPqawN">
+                      <Node Bounds="2390,654,73,13" Id="CnD7IDOy1IVOjN2LyPqawN">
                         <p:NodeReference LastCategoryFullName="Primitive.Integer32 (Unsigned)" LastSymbolSource="VL.CoreLib.vl" LastDependency="VVVV.MIDI.KorgNano.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="+" />
@@ -599,17 +599,17 @@
                         <Pin Id="BhcaKxabAEpNnWjGcHDDiJ" Name="Output" Kind="OutputPin" />
                       </Node>
                     </Patch>
-                    <ControlPoint Id="L4jHDvIueaWQFIDA2UPU3V" Bounds="2400,593" Alignment="Top" />
-                    <ControlPoint Id="OLNl73x20HEQGSKI7fEMPh" Bounds="2332,593" Alignment="Top" />
-                    <ControlPoint Id="Omb7LxGBfaIPox8QccQHGt" Bounds="2333,684" Alignment="Bottom" />
+                    <ControlPoint Id="L4jHDvIueaWQFIDA2UPU3V" Bounds="2460,590" Alignment="Top" />
+                    <ControlPoint Id="OLNl73x20HEQGSKI7fEMPh" Bounds="2392,590" Alignment="Top" />
+                    <ControlPoint Id="Omb7LxGBfaIPox8QccQHGt" Bounds="2393,682" Alignment="Bottom" />
                   </Node>
                   <Link Id="TfivNjPpUYcNjcfslDjBGz" Ids="L4jHDvIueaWQFIDA2UPU3V,KVPQKgt7EwhMdAEaFH1sDY" />
                   <Link Id="BkDSs3vu0YNONqCVzwu9LY" Ids="DBeKzb0e80NOZdyocCtswy,L4jHDvIueaWQFIDA2UPU3V" />
-                  <ControlPoint Id="DBeKzb0e80NOZdyocCtswy" Bounds="2399,568" />
+                  <ControlPoint Id="DBeKzb0e80NOZdyocCtswy" Bounds="2459,566" />
                   <Pin Id="GqLAtf7lzGiMTlsETzsvLJ" Name="Input" Kind="InputPin" Bounds="2143,514" />
                   <Link Id="HofKzQtN9AoLiu1YELQT36" Ids="GqLAtf7lzGiMTlsETzsvLJ,DBeKzb0e80NOZdyocCtswy" IsHidden="true" />
                   <Link Id="HKsSlFpkbT0QOv9SgMbDii" Ids="ODWFKBrry7BOBWkvJp74ml,MnGAtE6SUE1QFsDlpk7JUE" />
-                  <ControlPoint Id="EU0jVD11LpsOm9mGEKcRs3" Bounds="2332,705" />
+                  <ControlPoint Id="EU0jVD11LpsOm9mGEKcRs3" Bounds="2392,703" />
                   <Pin Id="AnsdLrRJAfiL1yCfrU4o9r" Name="Output" Kind="OutputPin" Bounds="2200,677" />
                   <Link Id="RRcitAov0I9LdUSIk6PKEN" Ids="EU0jVD11LpsOm9mGEKcRs3,AnsdLrRJAfiL1yCfrU4o9r" IsHidden="true" />
                   <Link Id="RCOry80LCcMQLApsfnvhkc" Ids="OLNl73x20HEQGSKI7fEMPh,Omb7LxGBfaIPox8QccQHGt" IsFeedback="true" />
@@ -679,7 +679,6 @@
             </ProcessDefinition>
             <Link Id="FiVobhNTpHWMJbhamZjhWi" Ids="QBepB3wZaDIOa8iqwkPwfo,E4bCZCqmM8bPEcStHirBhr" IsHidden="true" />
             <Link Id="HnBaThmW5plQLzfVhxZeRc" Ids="Ji6KW2zEdc5L39FnpZiyVf,E3oeKcxAaofP6u29ZZ5iDp" IsHidden="true" />
-            <Link Id="KQwDUtkrZZJLikyrVdTIJx" Ids="GuiIpO5Iuf8Pyu1JxeMnvA,Gq0T4fWHWhkL2qiFv4l8pp" />
             <Link Id="FVhqP8KFZuHLPWMnE5mqlj" Ids="CKvhSPbj9nkMWYHkgatI0h,U0iA6QTWdsqNo7NKYFsbIQ" />
             <Link Id="KeuNS7sG5qGOFtSKEl0Xob" Ids="TasvzvdRUmcMNKuPZ9FeV3,P6lcE8BnXbLPD5RnoMfxsI" />
             <Link Id="QiIDm1ZOfy0MPx0Cv406WS" Ids="DXnzUPXitrwOUKd6tresUm,OGBk8Ouk9JgLh76sM4WiO3" />
@@ -773,6 +772,7 @@
             <Link Id="NybbmYdmvHyL79UItamskT" Ids="QKzOCdSmjIAMikHFyqLDdz,EvxPC4no96aL0xwlfnCxUK" />
             <Link Id="EupYTdavAYxMuMttRCV6Zh" Ids="G1HKXH0pbxeMKRRpA5EnNU,DGoZsXoKtoaLifwTFCpeVY" />
             <Link Id="DfY9LLxOOvrNvqBMHDvKoD" Ids="OpV0kDKplPWOSB2t23diZs,TdwyjX1kSo7Nc04xMSqL57" />
+            <Link Id="RlKz6gYGJsmMd1WJz6r1Ku" Ids="GuiIpO5Iuf8Pyu1JxeMnvA,Gq0T4fWHWhkL2qiFv4l8pp" />
           </Patch>
         </Node>
         <!--

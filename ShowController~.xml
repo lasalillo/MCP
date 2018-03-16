@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowController.v4p" systemname="ShowLables" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowLables.v4p" bgcolor="7361853" scrollx="0" scrolly="-360" locked="0">
+   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowController.v4p" systemname="ShowLables" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\ShowLables.v4p" bgcolor="7361853" scrollx="0" scrolly="0" locked="1">
    <BOUNDS type="Window" left="35715" top="0" width="10365" height="11850">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
@@ -359,9 +359,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="465" top="10125" width="870" height="585">
+   <BOUNDS type="Box" left="465" top="9930" width="870" height="585">
    </BOUNDS>
-   <BOUNDS type="Node" left="465" top="10125" width="0" height="0">
+   <BOUNDS type="Node" left="465" top="9930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="/">
    </PIN>
@@ -379,9 +379,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1335" top="10125" width="450" height="585">
+   <BOUNDS type="Box" left="1335" top="9930" width="450" height="585">
    </BOUNDS>
-   <BOUNDS type="Node" left="1335" top="10125" width="0" height="0">
+   <BOUNDS type="Node" left="1335" top="9930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -457,15 +457,15 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="31" srcpinname="Beat" dstnodeid="34" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="13835" y="6015">
+   <LINKPOINT x="13835" y="5950">
    </LINKPOINT>
-   <LINKPOINT x="550" y="6315">
+   <LINKPOINT x="550" y="6185">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="31" srcpinname="Divisions" dstnodeid="33" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="13970" y="6015">
+   <LINKPOINT x="13970" y="5950">
    </LINKPOINT>
-   <LINKPOINT x="1405" y="6315">
+   <LINKPOINT x="1405" y="6185">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="31" srcpinname="TapCount" dstnodeid="32" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
@@ -475,9 +475,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
-   <BOUNDS type="Box" left="4080" top="9090" width="4455" height="330">
+   <BOUNDS type="Box" left="4080" top="9015" width="4455" height="330">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="9090" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="9015" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -501,15 +501,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="ActiveID" dstnodeid="30" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="14270" y="5710">
+   <LINKPOINT x="14270" y="5685">
    </LINKPOINT>
-   <LINKPOINT x="4165" y="5585">
+   <LINKPOINT x="4165" y="5535">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
-   <BOUNDS type="Box" left="4080" top="8520" width="4455" height="330">
+   <BOUNDS type="Box" left="4080" top="8475" width="4455" height="330">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="8520" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="8475" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -533,9 +533,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="SelectedID" dstnodeid="29" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="14570" y="5403">
+   <LINKPOINT x="14570" y="5388">
    </LINKPOINT>
-   <LINKPOINT x="4165" y="5323">
+   <LINKPOINT x="4165" y="5293">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28">
@@ -571,9 +571,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
-   <BOUNDS type="Box" left="4080" top="10215" width="4455" height="345">
+   <BOUNDS type="Box" left="4080" top="10080" width="4455" height="330">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="10215" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="10080" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -595,9 +595,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Fade" dstnodeid="27" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="15200" y="6320">
+   <LINKPOINT x="15200" y="6275">
    </LINKPOINT>
-   <LINKPOINT x="4165" y="6100">
+   <LINKPOINT x="4165" y="6010">
    </LINKPOINT>
    </LINK>
    <NODE systemname="GetList (MIDI.PresetMaker)" filename="vl\VVVV.MIDI.PresetMaker.vl" nodename="GetList (MIDI.PresetMaker)" componentmode="Hidden" id="23" hiddenwhenlocked="1">
@@ -659,9 +659,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2145" top="10125" width="1680" height="630">
+   <BOUNDS type="Box" left="2145" top="9930" width="1680" height="630">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="10125" width="0" height="0">
+   <BOUNDS type="Node" left="2145" top="9930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -677,15 +677,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="MorphTime" dstnodeid="38" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="16080" y="6173">
+   <LINKPOINT x="16080" y="6108">
    </LINKPOINT>
-   <LINKPOINT x="1650" y="6128">
+   <LINKPOINT x="1650" y="5998">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="4080" top="10485" width="4455" height="345">
+   <BOUNDS type="Box" left="4080" top="10350" width="4455" height="270">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="10485" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="10350" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -707,9 +707,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="31" srcpinname="Changed" dstnodeid="39" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="15650" y="6505">
+   <LINKPOINT x="15650" y="6460">
    </LINKPOINT>
-   <LINKPOINT x="4165" y="6185">
+   <LINKPOINT x="4165" y="6095">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="40">
@@ -773,9 +773,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="44">
-   <BOUNDS type="Box" left="4080" top="9645" width="4455" height="420">
+   <BOUNDS type="Box" left="4080" top="9525" width="4455" height="405">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="9645" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="9525" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
@@ -787,9 +787,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="44" dstpinname="Color Input" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="13520" y="7155">
+   <LINKPOINT x="13520" y="7115">
    </LINKPOINT>
-   <LINKPOINT x="4165" y="7020">
+   <LINKPOINT x="4165" y="6940">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="47" hiddenwhenlocked="1">
@@ -1029,9 +1029,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
-   <BOUNDS type="Box" left="4080" top="10020" width="4455" height="270">
+   <BOUNDS type="Box" left="4080" top="9885" width="4455" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="4080" top="10020" width="0" height="0">
+   <BOUNDS type="Node" left="4080" top="9885" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1094,8 +1094,20 @@
    <LINKPOINT x="15180" y="5730">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="62" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="15240" top="6705" width="100" height="100">
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="63">
+   <BOUNDS type="Box" left="4080" top="10560" width="4455" height="285">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4080" top="10560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Color Input" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="9">
+   </PIN>
+   </NODE>
+   <NODE systemname="Blend (Color)" nodename="Blend (Color)" componentmode="Hidden" id="62" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15210" top="7395" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="|1.00000,0.40959,0.00000,1.00000|">
    </PIN>
@@ -1105,31 +1117,69 @@
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
-   </NODE>
-   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="62" dstpinname="Input 1" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="13435" y="5293">
-   </LINKPOINT>
-   <LINKPOINT x="15245" y="5403">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="60" srcpinname="Output" dstnodeid="62" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="15195" y="6398">
-   </LINKPOINT>
-   <LINKPOINT x="15255" y="6398">
-   </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (Color)" componentmode="InABox" id="63">
-   <BOUNDS type="Box" left="465" top="7545" width="2745" height="1305">
-   </BOUNDS>
-   <BOUNDS type="Node" left="465" top="7545" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Show Value" slicecount="1" values="0">
+   <PIN pinname="Input1" visible="1">
+   </PIN>
+   <PIN pinname="Input2" visible="1">
+   </PIN>
+   <PIN pinname="Blend" visible="1">
+   </PIN>
+   <PIN pinname="Mix" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="63" dstpinname="Color Input" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="11225" y="7638">
+   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="62" dstpinname="Input 1" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="13425" y="5523">
    </LINKPOINT>
-   <LINKPOINT x="4525" y="6868">
+   <LINKPOINT x="15225" y="5863">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="62" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Fade" dstnodeid="62" dstpinname="Blend" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="15240" y="4815">
+   </LINKPOINT>
+   <LINKPOINT x="15240" y="4815">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Mix" dstnodeid="63" dstpinname="Color Input" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="15210" y="9143">
+   </LINKPOINT>
+   <LINKPOINT x="4140" y="9053">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Color Output" dstnodeid="62" dstpinname="Input2" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="16230" y="4913">
+   </LINKPOINT>
+   <LINKPOINT x="15690" y="4913">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="64" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="15435" top="6840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="|0.19186,0.24362,0.35223,1.00000|">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|1.00000,0.79729,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Color Output" dstnodeid="64" dstpinname="Input 1" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="13815" y="4983">
+   </LINKPOINT>
+   <LINKPOINT x="15060" y="5833">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output" dstnodeid="64" dstpinname="Switch" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="15180" y="6233">
+   </LINKPOINT>
+   <LINKPOINT x="15450" y="6233">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="62" dstpinname="Input1" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="15465" y="7253">
+   </LINKPOINT>
+   <LINKPOINT x="15465" y="7253">
    </LINKPOINT>
    </LINK>
    </PATCH>

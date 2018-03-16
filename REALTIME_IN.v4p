@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" systemname="REALTIME_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\SBB\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" systemname="REALTIME_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4590" top="5085" width="6960" height="7425">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="C:\SBB\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" systemname="REALTIME_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\seblh\Dropbox\_JOBS\AKTUELL\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" systemname="REALTIME_IN" filename="C:\SBB\_NEW_BALANCE\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\REALTIME_IN.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4590" top="5085" width="6960" height="7425">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
@@ -118,26 +118,6 @@
    <LINKPOINT x="3000" y="1470">
    </LINKPOINT>
    </LINK>
-   <NODE id="26" systemname="Default (MIDI.PresetMaker Realtime)" filename="vl\VVVV.MIDI.PresetMaker.vl" nodename="Default (MIDI.PresetMaker Realtime)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="3225" top="2190" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1" pintype="Output">
-   </PIN>
-   <BOUNDS type="Box" left="1950" top="1335" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="0" srcpinname="List" dstnodeid="21" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="27">
@@ -145,7 +125,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -156,12 +136,6 @@
    <LINKPOINT x="3000" y="2550">
    </LINKPOINT>
    <LINKPOINT x="2715" y="2550">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="27" dstpinname="Input 2" linkstyle="VHV">
-   <LINKPOINT x="3490" y="2690">
-   </LINKPOINT>
-   <LINKPOINT x="2720" y="2680">
    </LINKPOINT>
    </LINK>
    <NODE systemname="AvoidNIL (Raw)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\modules\AvoidNIL (Raw).v4p" nodename="AvoidNIL (Raw)" componentmode="Hidden" id="28">
@@ -263,9 +237,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
-   <BOUNDS type="Box" left="5025" top="4395" width="285" height="1275">
+   <BOUNDS type="Box" left="5325" top="4395" width="285" height="1275">
    </BOUNDS>
-   <BOUNDS type="Node" left="5025" top="4395" width="0" height="0">
+   <BOUNDS type="Node" left="5325" top="4395" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -321,9 +295,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="30" srcpinname="Divisions" dstnodeid="31" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="3600" y="4283">
+   <LINKPOINT x="3700" y="4283">
    </LINKPOINT>
-   <LINKPOINT x="5025" y="4283">
+   <LINKPOINT x="5225" y="4283">
    </LINKPOINT>
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="29">
@@ -340,20 +314,6 @@
    </LINK>
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="38" dstpinname="Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="5655" top="4425" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="5655" top="4425" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="MasterFade">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="40">
    <BOUNDS type="Box" left="1320" top="4155" width="285" height="240">
    </BOUNDS>
@@ -376,50 +336,6 @@
    </NODE>
    <LINK srcnodeid="30" srcpinname="MasterFade" dstnodeid="41" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="30" srcpinname="MasterFade" dstnodeid="39" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="3750" y="4298">
-   </LINKPOINT>
-   <LINKPOINT x="5655" y="4298">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="375" top="4905" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Node" visible="1">
-   </PIN>
-   <PIN pinname="Index" slicecount="1" values="8">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="0" srcpinname="List" dstnodeid="42" dstpinname="Input Node">
-   </LINK>
-   <NODE systemname="SplitValues (MIDI.PresetMaker MultiPage)" filename="vl\VVVV.MIDI.PresetMaker.vl" nodename="SplitValues (MIDI.PresetMaker MultiPage)" componentmode="Hidden" id="43">
-   <BOUNDS type="Node" left="390" top="5295" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Faders" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="42" srcpinname="Output Node" dstnodeid="43" dstpinname="Input">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
-   <BOUNDS type="Box" left="1020" top="5835" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1020" top="5835" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="AlphaLayers">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="43" srcpinname="Faders" dstnodeid="44" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="0" dstpinname="Input" linkstyle="VHV">
    <LINKPOINT x="2430" y="3518">
    </LINKPOINT>
@@ -430,6 +346,20 @@
    <LINKPOINT x="1880" y="3565">
    </LINKPOINT>
    <LINKPOINT x="3055" y="3560">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="42" systemname="Default (MIDI.PresetMaker Realtime)" filename="vl\VVVV.MIDI.PresetMaker.vl" nodename="Default (MIDI.PresetMaker Realtime)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="3225" top="2190" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1950" top="1335" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="27" dstpinname="Input 2" linkstyle="VHV">
+   <LINKPOINT x="3490" y="2690">
+   </LINKPOINT>
+   <LINKPOINT x="2720" y="2680">
    </LINKPOINT>
    </LINK>
    </PATCH>

@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MergeFiles.v4p" systemname="MergeFiles" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MergeFiles.v4p">
+   <PATCH nodename="C:\SBB\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MergeFiles.v4p" systemname="MergeFiles" filename="D:\Dropbox\NewBalance\PRODUCTION\_NB-GreyDay\VVVV\Library\Modules\MCP\MergeFiles.v4p">
    <NODE systemname="MergeFiles (MIDI.PresetMaker)" filename="vl\VVVV.MIDI.PresetMaker.vl" nodename="MergeFiles (MIDI.PresetMaker)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1500" top="3240" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="FilesToMerge" visible="1">
+   <PIN pinname="FilesToMerge" visible="1" slicecount="9" values="Files\Multi\01.preset,Files\Multi\02.preset,Files\Multi\03.preset,Files\Multi\04.preset,Files\Multi\05.preset,Files\Multi\06.preset,Files\Multi\07.preset,Files\Multi\08.preset,Files\Multi\09_Master.preset">
    </PIN>
    <PIN pinname="DestinationFile" visible="1">
    </PIN>
    <PIN pinname="Write" visible="1">
    </PIN>
-   <PIN pinname="Read" slicecount="1" values="0" visible="1">
+   <PIN pinname="Read" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Count" visible="1">
    </PIN>
@@ -84,8 +84,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Write">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Filenames" dstnodeid="0" dstpinname="FilesToMerge">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="0" dstpinname="DestinationFile">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Write">
@@ -185,5 +183,81 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="On Completed" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1470" top="2565" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1470" top="2565" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1380" top="1275" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1380" top="1275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Multi">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Directory">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3045" top="2355" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3045" top="2355" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Multi\01.preset">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="DestinationFile">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3135" top="2730" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3135" top="2730" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Files\01_Felix.preset">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="DestinationFile">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="10" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="0" dstpinname="FilesToMerge">
    </LINK>
    </PATCH>

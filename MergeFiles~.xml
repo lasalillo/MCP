@@ -29,9 +29,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1575" top="915" width="795" height="240">
+   <BOUNDS type="Box" left="1080" top="975" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1575" top="915" width="0" height="0">
+   <BOUNDS type="Node" left="1080" top="975" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Multi">
    </PIN>
@@ -47,9 +47,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2355" top="1470" width="795" height="240">
+   <BOUNDS type="Box" left="2295" top="975" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2355" top="1470" width="0" height="0">
+   <BOUNDS type="Node" left="2295" top="975" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Files\Merged.preset">
    </PIN>
@@ -65,9 +65,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3090" top="900" width="285" height="240">
+   <BOUNDS type="Box" left="3450" top="975" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3090" top="900" width="0" height="0">
+   <BOUNDS type="Node" left="3450" top="975" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -92,7 +92,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output String" dstnodeid="1" dstpinname="Directory">
    </LINK>
-   <BOUNDS type="Window" left="31080" top="9165" width="4095" height="6750">
+   <BOUNDS type="Window" left="31080" top="9165" width="4980" height="6750">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.4">
    </PACK>
@@ -101,9 +101,9 @@
    <PACK Name="addonpack" Version="36.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
-   <BOUNDS type="Box" left="585" top="1815" width="480" height="480">
+   <BOUNDS type="Box" left="150" top="975" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="585" top="1815" width="0" height="0">
+   <BOUNDS type="Node" left="150" top="975" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -145,7 +145,7 @@
    <LINK srcnodeid="0" srcpinname="Count" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="510" top="2580" width="100" height="100">
+   <BOUNDS type="Node" left="150" top="1875" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Simulate" visible="1">
    </PIN>

@@ -142,6 +142,7 @@
                   </CategoryReference>
                 </p:NodeReference>
                 <Pin Id="BovVUfYFpPNPrMzPp6BHML" Name="Input" Kind="InputPin" />
+                <Pin Id="S4zv6q6fyEYMVsTZwx23tS" Name="Device" Kind="InputPin" />
               </Node>
               <Node Bounds="397,314,42,13" Id="QaUcpOoPWFyNyNCPDRU9iH">
                 <p:NodeReference>
@@ -164,8 +165,13 @@
                 <Pin Id="LPNrlzFCAPGO5afvfQjvi0" Name="LaunchPad" Kind="OutputPin" />
                 <Pin Id="NOb99WUgfGdNjijqpRsuWn" Name="MackieControl" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="InHelB15fpyM85MAeL8PAg" Bounds="355,230" />
+              <ControlPoint Id="InHelB15fpyM85MAeL8PAg" Bounds="353,231" />
               <ControlPoint Id="P5fjAvQOqrHP4M1nG4BgCe" Bounds="437,231" />
+              <Pad Id="Vj7nR3GTxkeNksaytnAV7V" Comment="Device" Bounds="394,184,161,19" ShowValueBox="true" isIOBox="true" Value="{&quot;FValue&quot;:&quot;5- Launchpad Mini&quot;}">
+                <p:TypeAnnotation LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+                  <Choice Kind="TypeFlag" Name="MidiOutputDevice" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <Patch Id="BDbTcABhYJ2PrJbPZuHSC4" Name="Create" />
             <Patch Id="AE2JIv0cDVgLRdJXl9UAwQ" Name="Update">
@@ -186,6 +192,7 @@
             <Link Id="AOCm1DycW1AM6aLIFcZLAH" Ids="EiS8QmFoYCZPpyklf5qMlk,InHelB15fpyM85MAeL8PAg" IsHidden="true" />
             <Link Id="HoxTKGMiof2OmFGa8donef" Ids="P5fjAvQOqrHP4M1nG4BgCe,Lz3FqCyoykoPfm9JUDw3gc" />
             <Link Id="KMPMiAmqcRrPogSBgef6Xv" Ids="NoiwTuIhb7dOXaPqDGhiVW,P5fjAvQOqrHP4M1nG4BgCe" IsHidden="true" />
+            <Link Id="M1HGRx9yRfaNwmCXGDZ2F3" Ids="Vj7nR3GTxkeNksaytnAV7V,S4zv6q6fyEYMVsTZwx23tS" />
           </Patch>
         </Node>
         <!--
@@ -211,6 +218,7 @@
                 <Pin Id="Dv0NN8Va8GpL0DiE3FQ2XS" Name="Output" Kind="OutputPin" />
                 <Pin Id="VA2oNLFbXz1PlFmwO0Jimm" Name="On Data" Kind="OutputPin" />
                 <Pin Id="KFdCBz4Y4PrP65E4bG8kah" Name="LaunchPad" Kind="OutputPin" />
+                <Pin Id="FCQ1gcvzE5UMdKB5Ad2G8t" Name="Device" Kind="InputPin" />
               </Node>
               <Node Bounds="672,498,65,13" Id="A7npDPcoLFCL3AttDpcW59">
                 <p:NodeReference>
@@ -356,6 +364,11 @@
                 <Pin Id="DHXmkDSo0tOMcT6XexX3B7" Name="Out" Kind="StateOutputPin" />
               </Node>
               <ControlPoint Id="UbIDHOKNUVvPDIwBee8F7b" Bounds="674,430" />
+              <Pad Id="Ro69sH99gJUNkKcb1NHlHY" Comment="Device" Bounds="616,392,119,19" ShowValueBox="true" isIOBox="true" Value="{&quot;FValue&quot;:&quot;5- Launchpad Mini&quot;}">
+                <p:TypeAnnotation LastCategoryFullName="IO.Midi" LastSymbolSource="VL.IO.Midi.vl">
+                  <Choice Kind="TypeFlag" Name="MidiInputDevice" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <Patch Id="NwKFtXS6FMWPbBolX4mGQ7" Name="Create" ParticipatingElements="HINRvWn8AZuO3529GbEaLt,CtDEi7cf5OcLgQzOnC2z5I,NUUrTu2JH8INY8wFQTHJlx,QQzTnsOcIvFPMqDRZ3iZEw,ARP2705yHcdL8UvCWZo9Z2,Lp2FtSpp5S4ORyzIBKLuF6" />
             <Patch Id="S7yVjQrjYQ0NTiTqWCeKr4" Name="Update">
@@ -384,6 +397,7 @@
             <Link Id="VwEZpvOoTOWPXrDXgzdraf" Ids="DHXmkDSo0tOMcT6XexX3B7,LFOjccFuHysQcPMIdnTzyB" />
             <Link Id="HgqSoTWAtfYO2HmzSdtEUn" Ids="UbIDHOKNUVvPDIwBee8F7b,PNi8gXLQlvHPSL70oeqqjK" />
             <Link Id="ETRCZV0OoFBNtQa87p9Ker" Ids="FVPFoasV7QkPH594KDEBN3,UbIDHOKNUVvPDIwBee8F7b" IsHidden="true" />
+            <Link Id="Qawx6KFiZMDMOHhrybQPaC" Ids="Ro69sH99gJUNkKcb1NHlHY,FCQ1gcvzE5UMdKB5Ad2G8t" />
           </Patch>
         </Node>
         <!--
